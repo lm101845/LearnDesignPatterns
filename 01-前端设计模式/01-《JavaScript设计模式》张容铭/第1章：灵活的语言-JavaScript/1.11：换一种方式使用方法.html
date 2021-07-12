@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Function.prototype.addMethod = function(name,fn){
+            this.prototype[name] = fn
+            return this
+            // 这个书上没有加return this,不加的话会报错
+        }
+
+        var Methods = function(){}
+        Methods.addMethod('checkName',function(){
+            // 验证姓名
+            console.log('444');
+        }).addMethod('checkEmail',function(){
+            console.log('999');
+            // 验证邮箱
+        })
+
+       var m = new Methods()
+      m.checkName()
+      m.checkEmail()
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var checkObject = function () {
+				return {
+					checkName: function () {
+						//验证姓名
+					},
+					checkEmail: function () {
+						//验证邮箱
+                        console.log('验证邮箱');
+					},
+					checkPassword: function () {
+						//验证密码
+					},
+				}
+			}
+
+            var a = checkObject()
+            // 添加小括号表示运行这个函数
+            a.checkEmail()
+            // 这个就相当于checkObject().checkEmail()
+            // 还是不太熟悉这种写法啊
+		</script>
+	</body>
+</html>

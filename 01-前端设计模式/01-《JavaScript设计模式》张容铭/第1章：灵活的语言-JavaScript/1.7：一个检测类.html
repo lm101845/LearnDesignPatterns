@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// 写法1：这种方式我们要将prototype写很多遍，不好
+			// var checkObject = function () {}
+			// checkObject.prototype.checkName = function () {
+			// 	//验证姓名
+			// }
+			// checkObject.prototype.checkEmail = function () {
+			// 	//验证邮箱
+			// }
+			// checkObject.prototype.checkPassword = function () {
+			// 	//验证密码
+			// }
+
+			// 写法2：
+			var checkObject = function () {}
+			checkObject.prototype = {
+				checkName: function () {
+					//验证姓名
+                    console.log('1');
+				},
+				checkEmail: function () {
+					//验证邮箱
+                    console.log('2');
+				},
+				checkPassword: function () {
+					//验证密码
+                    console.log('3');
+				},
+			}
+
+			var a = new checkObject()
+			a.checkName()
+			a.checkEmail()
+			a.checkPassword()
+		</script>
+	</body>
+</html>

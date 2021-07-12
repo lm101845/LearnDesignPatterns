@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Function.prototype.addMethod = function(name,fn){
+            this[name] = fn
+            return this
+        }
+
+        var methods = function(){}
+        methods.addMethod('checkName',function(){
+            // 验证姓名
+            console.log('444');
+            return this
+        }).addMethod('checkEmail',function(){
+            console.log('999');
+            // 验证邮箱
+            return this
+        })
+
+        methods.checkName().checkEmail()
+    </script>
+</body>
+</html>

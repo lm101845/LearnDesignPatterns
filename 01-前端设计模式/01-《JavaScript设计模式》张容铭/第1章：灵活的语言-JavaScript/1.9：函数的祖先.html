@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			Function.prototype.checkEmail = function () {
+				console.log('1')
+				//验证邮箱
+			}
+
+			// 方法1：函数形式
+			var f = function () {}
+			f.checkEmail()
+
+			// 方法2：类的形式
+			var f = new Function()
+			f.checkEmail()
+
+			// “但是你这么做在我们这里是不允许的，因为你污染了原生对象Function，
+			//所以别人创建的函数也会被你创建的函数所污染，造成不必要的开销，
+			//但你可以抽象出一个统一添加方法的功能方法。”
+
+			Function.prototype.addMethod = function (name, fn) {
+				this[name] = fn
+			}
+
+			// 方法1
+			var methods = function () {}
+
+			// 方法2
+			var methods = new Function()
+			methods.addMethod('checkName', function () {
+				console.log('1')
+				// 验证姓名
+			})
+			methods.addMethod('checkEmail', function () {
+                console.log('2');
+				//验证邮箱
+			})
+			methods.checkName()
+			methods.checkEmail()
+		</script>
+	</body>
+</html>

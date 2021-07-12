@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// var checkObject = {
+			// 	checkName: function () {
+			// 		//验证姓名
+			//       console.log('1');
+			// 		return this
+			// 	},
+			// 	checkEmail: function () {
+			// 		//验证邮箱
+			//         console.log('2');
+			// 		return this
+			// 	},
+			// 	checkPassword: function () {
+			// 		//验证密码
+			//         console.log('3');
+			// 		return this
+			// 	},
+			// }
+			// checkObject.checkName().checkEmail().checkPassword()
+
+			// 同样的方式还可以放到类的原型对象中
+			var CheckObject = function () {}
+			CheckObject.prototype = {
+				checkName: function () {
+					//验证姓名
+                    console.log('1');
+					return this
+				},
+				checkEmail: function () {
+					//验证邮箱
+                    console.log('2');
+					return this
+				},
+				checkPassword: function () {
+					//验证密码
+			        console.log('3');
+					return this
+				},
+			}
+			var a = new CheckObject()
+            a.checkName().checkEmail().checkPassword()
+		</script>
+	</body>
+</html>
