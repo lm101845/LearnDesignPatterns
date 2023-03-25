@@ -1,0 +1,3 @@
+https://pattern.windliang.wang/
+
+单例模式看完——22-12-28
