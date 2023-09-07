@@ -1,7 +1,7 @@
 package com.atguigu.principle.inversion.improve;
 
 /**
- * @Author liming111
+ * @Author liming
  * @Date 2023/7/19 10:14
  **/
 public class DependecyInversion {

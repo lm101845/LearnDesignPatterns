@@ -1,7 +1,7 @@
 package com.atguigu.principle.liskov;
 
 /**
- * @Author liming111
+ * @Author liming
  * @Date 2023/7/19 11:06
  **/
 public class Liskov {

@@ -1,7 +1,7 @@
 package com.atguigu.principle.liskov.improve;
 
 /**
- * @Author liming111
+ * @Author liming
  * @Date 2023/7/19 11:13
  **/
 
