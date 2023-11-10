@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.atguigu.principle.uml.dependency.PersonServiceBean</OriginalElement>
+  <nodes>
+    <node x="-202.7586206896553" y="-292.03448275862075">com.atguigu.principle.uml.dependency.PersonServiceBean</node>
+  </nodes>
+  <notes>
+    <note x="332.7068965517242" y="-219.31034482758628">
+      <node>com.atguigu.principle.uml.dependency.PersonServiceBean</node>
+      <value>这是笔记</value>
+      <edge>
+        <point x="0.0" y="-75.0" />
+        <point x="-101.25862068965529" y="-99.70689655172416" />
+        <point x="145.63793103448273" y="-99.70689655172416" />
+        <point x="145.63793103448273" y="-266.00000000000006" />
+        <point x="367.7068965517242" y="-266.00000000000006" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+  </notes>
+  <edges />
+  <settings layout="Hierarchic" zoom="1.4499999999999997" showDependencies="false" x="52.5862068965518" y="-71.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,4 +1,4 @@
-package com.atguigu.principle.uml.generalization;
+package com.atguigu.uml.generalization;
 
 /**
  * @Author liming

@@ -1,4 +1,4 @@
-package com.atguigu.principle.uml.dependency;
+package com.atguigu.uml.dependency;
 
 /**
  * @Author liming

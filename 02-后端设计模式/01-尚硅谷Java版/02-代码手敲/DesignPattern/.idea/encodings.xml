@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/src/com" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/atguigu/principle/inversion/improve/DependencyPass.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/atguigu/principle/liskov/improve/Liskov.java" charset="GBK" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/atguigu/uml/composition/Computer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/atguigu/uml/composition/Person.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
